@@ -1,38 +1,128 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color:  #1f1f60
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 30px;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: space-around;
+  min-width: 35%;
+
+}
+.navbar ul li{
+  list-style: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.signout-btn{
+  border-radius: 50px;
+  padding: 15px 10px;
+  min-width: 140px;
+  background-image: linear-gradient(to right,#4564ee,#b9dbff);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.signoutEdit-btn{
+  border-radius: 50px;
+  padding: 15px 10px;
+  min-width: 140px;
+  background-image: linear-gradient(to right,#4564ee,#b9dbff);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.menu-btn{
+  border-radius: 50px;
+  padding: 15px 10px;
+  min-width: 140px;
+  color: white;
+  font-size: 16px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-group{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.card-list{
+  background-color: #1f1f60;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-item{
+  padding: 20px !important;
+  width: 240px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-image: linear-gradient(to right,#4564ee,#b9dbff);
+  cursor: pointer;
+}
+.cardDetail-item{
+  display: flex;
+  padding: 20px !important;
+  width: 70%;
+  margin-left: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-image: linear-gradient(to right,#4564ee,#b9dbff);
+}
+
+.card-name{
+  margin: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.card-img{
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+.editCard-img{
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-btn{
+  margin-top: 10px;
+  bottom: 10px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background-color: white;
+}
+
+.detail-data{
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
